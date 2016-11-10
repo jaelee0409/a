@@ -23,7 +23,7 @@
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 
-	if(!$visitormail == "" && (!strstr($visitormail,"@") || !strstr($visitormail,".")))
+	if(!$email == "" && (!strstr($email,"@") || !strstr($email,".")))
 	{
 	echo "<h2>Use Back - Enter valid e-mail</h2>\n";
 	$badinput = "<h2>Feedback was NOT submitted</h2>\n";
