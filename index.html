@@ -109,16 +109,7 @@
 
 						<!-- Contact Form -->
 						<form method="post" action="sendemail.php">
-							<?php
-							$ipi = getenv("REMOTE_ADDR");
-							$httprefi = getenv ("HTTP_REFERER");
-							$httpagenti = getenv ("HTTP_USER_AGENT");
-							?>
 
-							<input type="hidden" name="ip" value="<?php echo $ipi ?>" />
-							<input type="hidden" name="httpref" value="<?php echo $httprefi ?>" />
-							<input type="hidden" name="httpagent" value="<?php echo $httpagenti ?>" />
-							
 							<div class="row 50%">
 									<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Name" /></div>
 									<div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" /></div>

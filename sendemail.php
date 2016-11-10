@@ -16,9 +16,6 @@
 
 	<?php
 
-	$ip = $_POST['ip'];
-	$httpref = $_POST['httpref'];
-	$httpagent = $_POST['httpagent'];
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$message = $_POST['message'];
@@ -45,9 +42,6 @@ $message = stripcslashes($message);
 $message = " $todayis [EST] \n
 Message: $message \n
 From: $name ($email)\n
-Additional Info : IP = $ip \n
-Browser Info: $httpagent \n
-Referral : $httpref \n
 ";
 
 $from = "From: $email\r\n";
@@ -68,7 +62,6 @@ mail("jaelee0409@gmail.com", $subject, $message, $from);
 	<?php $messageout = str_replace("\r", "<br/>", $message);
 	echo $messageout; ?>
 	<br />
-	<?php echo $ip ?>
 
 	<br /><br />
 	<a href="https://jaelee0409.github.io/a"> Next Page </a>
