@@ -2882,7 +2882,7 @@
 
 /* One */
 
-	#one {
+	#who {
 		background: url("images/overlay.png"), url("../../images/one.jpg");
 		background-size: 256px 256px, 1000px, 1000px;
 		background-attachment: fixed, fixed;
@@ -2891,7 +2891,7 @@
 
 /* Two */
 
-	#two {
+	#what {
 		background: url("images/overlay.png"), url("../../images/two.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
